@@ -14009,7 +14009,7 @@ a.text-dark:focus {
 }
 
 :root {
-  --primary-color: #596eb4;
+  --primary-color: #97cb51;
   --secondary-color: #97cb51;
   --font-color: #696969;
   --bg-color: #fff;
@@ -15924,7 +15924,7 @@ a.hnys-title:hover {
 
 .w3l-how-grids-3 .sub-wid-grid-9 span {
   font-size: 15px;
-  color: #fff;
+  color: #000;
   line-height: 25px;
   background: var(--primary-color);
   padding: 6px 25px;
