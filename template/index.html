@@ -11,19 +11,21 @@
   <link href="//fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap" rel="stylesheet">
   <!-- google fonts -->
   <!-- Template CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/style-starter.css">
   <link rel="stylesheet" href="assets/css/custom.css">
   <!-- Template CSS -->
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
 
-  
+
   <!--header-->
   <header id="site-header" class="fixed-top">
     <div class="container">
-      <nav class="navbar navbar-expand-lg stroke">
+      <nav class="navbar navbar-expand-lg  stroke">
+        <!-- <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">   -->
         <h1>
           <a class="navbar-brand mr-lg-5" href="index.html">
             <img src="assets/images/logo.png" alt="Prakriti Architects">
@@ -43,14 +45,14 @@
 
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
+            <li class="nav-item">
               <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
+              <a class="nav-link" href="#services">Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#services">Services</a>
+              <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#gallery">Gallery</a>
@@ -58,7 +60,7 @@
             <li class="nav-item">
               <a class="nav-link" href="#contact">Contact</a>
             </li>
-           
+
           </ul>
         </div>
         <!-- toggle switch for light and dark theme -->
@@ -204,34 +206,34 @@
           </div>
           <div class="cwp4-image col-lg-4 col-md-6" data-aos="fade-up">
             <div class="grids4-info">
-              <a href="#"><img src="assets/images/g1.jpg" class="img-fluid" alt="" ></a>
+              <a href="#"><img src="assets/images/g1.jpg" class="img-fluid" alt=""></a>
               <div class="info-bg">
-                  <h5><a href="#">Villa Projects</a></h5>
-                  <p>Nulla ex nunc, interdum nec egestas nec, dapibus ac mauris. Vivamus id tempor nisl.</p>
-                  <!-- <ul>
+                <h5><a href="#">Villa Projects</a></h5>
+                <p>Nulla ex nunc, interdum nec egestas nec, dapibus ac mauris. Vivamus id tempor nisl.</p>
+                <!-- <ul>
                       <li><span class="fa fa-bed"></span> 3</li>
                       <li><span class="fa fa-bath"></span> 3</li>
                       <li><span class="fa fa-share-square-o"></span> 1200 sq ft</li>
                   </ul> -->
               </div>
-          </div>
+            </div>
           </div>
           <div class="cwp4-image col-lg-4 col-md-6" data-aos="fade-left">
             <div class="grids4-info">
               <a href="#"><img src="assets/images/g2.jpg" class="img-fluid" alt=""></a>
               <div class="info-bg">
-                  <h5><a href="#">Happy Homes</a></h5>
-                  <!-- <span class="price">$ 280/month</span> -->
-                  <p>Nulla ex nunc, interdum nec egestas nec, dapibus ac mauris. Vivamus id tempor nisl.</p>
-                  <!-- <ul>
+                <h5><a href="#">Happy Homes</a></h5>
+                <!-- <span class="price">$ 280/month</span> -->
+                <p>Nulla ex nunc, interdum nec egestas nec, dapibus ac mauris. Vivamus id tempor nisl.</p>
+                <!-- <ul>
                       <li><span class="fa fa-bed"></span> 3</li>
                       <li><span class="fa fa-bath"></span> 3</li>
                       <li><span class="fa fa-share-square-o"></span> 1200 sq ft</li>
                   </ul> -->
               </div>
+            </div>
           </div>
-          </div>
-         
+
 
         </div>
       </div>
@@ -239,7 +241,7 @@
   </section>
   <!--//services-->
   <!-- stats -->
-  <section class="w3l-stats py-5" id="stats" >
+  <section class="w3l-stats py-5" id="stats">
     <div class="gallery-inner container py-lg-0 py-3">
       <div class="row stats-con pb-lg-3">
         <div class="col-lg-4 col-6 stats_info counter_grid" style="text-align: center;">
@@ -290,9 +292,9 @@
         <h3 class="hny-title">Our Unique Designs</h3>
         <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
       </div>
-      <div class="d-grid grid-col-2 grid-element-9" >
+      <div class="d-grid grid-col-2 grid-element-9">
         <div class="left-grid-ele-9 grid-bg1" data-aos="fade-right">
-          <div class="sub-wid-grid-9" >
+          <div class="sub-wid-grid-9">
             <h4 class="text-grid-9"><a href="#">Kochi</a></h4>
             <p class="sub-para">Perfect City!</p>
             <span>8 properties</span>
@@ -334,7 +336,7 @@
   <!--//grids2-->
 
 
-  
+
   <!-- home page video popup section -->
   <section class="w3l-index5" id="about">
     <div class="new-block py-5">
@@ -359,12 +361,15 @@
 
               <!-- dialog itself, mfp-hide class is required to make dialog hidden -->
               <div id="small-dialog" class="zoom-anim-dialog mfp-hide">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/qcIzDfDW4yM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/qcIzDfDW4yM"
+                  title="YouTube video player" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe> -->
               </div>
             </div>
           </div>
 
-         
+
         </div>
       </div>
     </div>
@@ -377,7 +382,44 @@
       <h6 class="sub-title text-center">Work With Us</h6>
       <h3 class="hny-title mb-md-5 mb-4">Let's start a Project!</h3>
       <!-- <a href="contact.html" class="btn btn-style btn-primary mr-2">Hire Us</a> -->
-      <a href="contact.html" class="btn btn-style btn-outline-primary">Get in touch</a>
+      <a class="btn btn-style btn-outline-primary" data-toggle="modal" data-target="#myModal">Get in touch</a>
+    </div>
+
+    <!-- The Modal -->
+    <div class="modal" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <!-- <h4 class="modal-title">Modal Heading</h4> -->
+            <button type="button" class="close btn-close" data-dismiss="modal">&times;</button>
+            
+            <div class="form">
+              <div class="form-group">
+                <label for="">Contact Name</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="">Mobile Number</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="">Email </label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="">Message </label>
+               <textarea name="" class="form-control"></textarea>
+              </div>
+              <div class="form-group">
+               <button type="submit" class="btn btn-primary float-right">Query Submit</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
     </div>
   </section>
   <!--//get -->
@@ -422,7 +464,9 @@
               </div>
             </div>
             <div class="col-lg-6 col-md-12 column pl-lg-5 column4 mt-lg-0 mt-5">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3928.784040782479!2d76.33292101416662!3d10.03467187519113!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080daa833f89c9%3A0xdab7abaef6366e16!2sPrakriti%20Architects%20And%20Builders!5e0!3m2!1sen!2sin!4v1618939330961!5m2!1sen!2sin" style="border:0;width: 100%;height: 50vh;" allowfullscreen="" loading="lazy"></iframe>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3928.784040782479!2d76.33292101416662!3d10.03467187519113!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080daa833f89c9%3A0xdab7abaef6366e16!2sPrakriti%20Architects%20And%20Builders!5e0!3m2!1sen!2sin!4v1618939330961!5m2!1sen!2sin"
+                style="border:0;width: 100%;height: 50vh;" allowfullscreen="" loading="lazy"></iframe>
             </div>
           </div>
           <div class="d-flex below-section justify-content-between align-items-center pt-4 mt-5">
@@ -447,7 +491,12 @@
         </div>
       </div>
 
+
+
+
       
+
+
       <script src="assets/js/jquery-3.3.1.min.js"></script>
       <!-- move top -->
       <button onclick="topFunction()" id="movetop" title="Go to top">
@@ -541,7 +590,7 @@
             nav: false
           },
           1000: {
-            items:2,
+            items: 2,
             nav: false,
             loop: true
           }
@@ -552,42 +601,7 @@
   <!-- //script for tesimonials carousel slider -->
 
   <!-- video popup -->
-  <script src="assets/js/jquery.magnific-popup.min.js"></script>
-  <script>
-    $(document).ready(function () {
-      $('.popup-with-zoom-anim').magnificPopup({
-        type: 'inline',
 
-        fixedContentPos: false,
-        fixedBgPos: true,
-
-        overflowY: 'auto',
-
-        closeBtnInside: true,
-        preloader: false,
-
-        midClick: true,
-        removalDelay: 300,
-        mainClass: 'my-mfp-zoom-in'
-      });
-
-      $('.popup-with-move-anim').magnificPopup({
-        type: 'inline',
-
-        fixedContentPos: false,
-        fixedBgPos: true,
-
-        overflowY: 'auto',
-
-        closeBtnInside: true,
-        preloader: false,
-
-        midClick: true,
-        removalDelay: 300,
-        mainClass: 'my-mfp-slide-bottom'
-      });
-    });
-  </script>
   <!-- //video popup -->
   <!-- stats number counter-->
   <script src="assets/js/jquery.waypoints.min.js"></script>
